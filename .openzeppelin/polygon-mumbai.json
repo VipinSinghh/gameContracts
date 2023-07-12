@@ -1,0 +1,210 @@
+{
+  "manifestVersion": "3.2",
+  "admin": {
+    "address": "0xEf53D161c4C0276B9281c08a486f7eBA6FE80163",
+    "txHash": "0x9b589130e55bf1af83f85e24e0608860fc72e1002adc01c8da8de30ccca0764c"
+  },
+  "proxies": [
+    {
+      "address": "0xC29F3d40D35d178074Fd1b47f72be90094a4a08a",
+      "txHash": "0x892fe89cf65f1dce0e38a6ffe32acd18083bb5d40175ed629291712ea7178f43",
+      "kind": "transparent"
+    },
+    {
+      "address": "0x443BDE294288fC420b9CbFDf5cde7DB4fA0eeFd3",
+      "txHash": "0xd9e44dccfcf5cb8edb267f60f1103d06d19d4585e5926c4b7bd0add3ed3e1db8",
+      "kind": "transparent"
+    }
+  ],
+  "impls": {
+    "2af401436c0a2d299885f3838c63c735804a826c11ecace7174657bb9dcaadfe": {
+      "address": "0x0387c859FBe90C36D2613Aa1FeeCFE57045dB522",
+      "txHash": "0xd660c843f1e4836fea220be723ed7ca423a7965e5a40b0e2e34dcdfa357a0506",
+      "layout": {
+        "solcVersion": "0.8.19",
+        "storage": [
+          {
+            "label": "_initialized",
+            "offset": 0,
+            "slot": "0",
+            "type": "t_uint8",
+            "contract": "Initializable",
+            "src": "@openzeppelin\\contracts-upgradeable\\proxy\\utils\\Initializable.sol:63",
+            "retypedFrom": "bool"
+          },
+          {
+            "label": "_initializing",
+            "offset": 1,
+            "slot": "0",
+            "type": "t_bool",
+            "contract": "Initializable",
+            "src": "@openzeppelin\\contracts-upgradeable\\proxy\\utils\\Initializable.sol:68"
+          },
+          {
+            "label": "_owner",
+            "offset": 2,
+            "slot": "0",
+            "type": "t_address",
+            "contract": "OwnableUpgradeable",
+            "src": "contracts\\OwnableUpgradeable.sol:24"
+          },
+          {
+            "label": "__gap",
+            "offset": 0,
+            "slot": "1",
+            "type": "t_array(t_uint256)49_storage",
+            "contract": "OwnableUpgradeable",
+            "src": "contracts\\OwnableUpgradeable.sol:88"
+          },
+          {
+            "label": "ownerr",
+            "offset": 0,
+            "slot": "50",
+            "type": "t_address",
+            "contract": "PricePrediction",
+            "src": "contracts\\PricePrediction.sol:22"
+          },
+          {
+            "label": "gameToken",
+            "offset": 0,
+            "slot": "51",
+            "type": "t_contract(ERC20)1090",
+            "contract": "PricePrediction",
+            "src": "contracts\\PricePrediction.sol:23"
+          },
+          {
+            "label": "priceFeed",
+            "offset": 0,
+            "slot": "52",
+            "type": "t_contract(AggregatorV3Interface)45",
+            "contract": "PricePrediction",
+            "src": "contracts\\PricePrediction.sol:24"
+          },
+          {
+            "label": "slotDuration",
+            "offset": 0,
+            "slot": "53",
+            "type": "t_uint256",
+            "contract": "PricePrediction",
+            "src": "contracts\\PricePrediction.sol:25"
+          },
+          {
+            "label": "gameStartTime",
+            "offset": 0,
+            "slot": "54",
+            "type": "t_uint256",
+            "contract": "PricePrediction",
+            "src": "contracts\\PricePrediction.sol:27"
+          },
+          {
+            "label": "currentSlot",
+            "offset": 0,
+            "slot": "55",
+            "type": "t_uint256",
+            "contract": "PricePrediction",
+            "src": "contracts\\PricePrediction.sol:28"
+          },
+          {
+            "label": "status",
+            "offset": 0,
+            "slot": "56",
+            "type": "t_enum(GameStatus)1469",
+            "contract": "PricePrediction",
+            "src": "contracts\\PricePrediction.sol:29"
+          },
+          {
+            "label": "bets",
+            "offset": 0,
+            "slot": "57",
+            "type": "t_mapping(t_uint256,t_array(t_struct(Bet)1465_storage)dyn_storage)",
+            "contract": "PricePrediction",
+            "src": "contracts\\PricePrediction.sol:30"
+          },
+          {
+            "label": "previousPrice",
+            "offset": 0,
+            "slot": "58",
+            "type": "t_int256",
+            "contract": "PricePrediction",
+            "src": "contracts\\PricePrediction.sol:31"
+          }
+        ],
+        "types": {
+          "t_address": {
+            "label": "address",
+            "numberOfBytes": "20"
+          },
+          "t_array(t_struct(Bet)1465_storage)dyn_storage": {
+            "label": "struct PricePrediction.Bet[]",
+            "numberOfBytes": "32"
+          },
+          "t_array(t_uint256)49_storage": {
+            "label": "uint256[49]",
+            "numberOfBytes": "1568"
+          },
+          "t_bool": {
+            "label": "bool",
+            "numberOfBytes": "1"
+          },
+          "t_contract(AggregatorV3Interface)45": {
+            "label": "contract AggregatorV3Interface",
+            "numberOfBytes": "20"
+          },
+          "t_contract(ERC20)1090": {
+            "label": "contract ERC20",
+            "numberOfBytes": "20"
+          },
+          "t_enum(GameStatus)1469": {
+            "label": "enum PricePrediction.GameStatus",
+            "members": [
+              "INACTIVE",
+              "ACTIVE",
+              "FINISHED"
+            ],
+            "numberOfBytes": "1"
+          },
+          "t_int256": {
+            "label": "int256",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_uint256,t_array(t_struct(Bet)1465_storage)dyn_storage)": {
+            "label": "mapping(uint256 => struct PricePrediction.Bet[])",
+            "numberOfBytes": "32"
+          },
+          "t_struct(Bet)1465_storage": {
+            "label": "struct PricePrediction.Bet",
+            "members": [
+              {
+                "label": "user",
+                "type": "t_address",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "isUp",
+                "type": "t_bool",
+                "offset": 20,
+                "slot": "0"
+              },
+              {
+                "label": "amount",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "1"
+              }
+            ],
+            "numberOfBytes": "64"
+          },
+          "t_uint256": {
+            "label": "uint256",
+            "numberOfBytes": "32"
+          },
+          "t_uint8": {
+            "label": "uint8",
+            "numberOfBytes": "1"
+          }
+        }
+      }
+    }
+  }
+}
